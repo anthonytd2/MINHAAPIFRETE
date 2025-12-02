@@ -10,7 +10,7 @@ app.use(express.json());
 
 // 4. Rota de Teste
 app.get('/', (req, res) => {
-    res.send('API de Fretes está rodando com CRUD Completo!');
+    res.send('API de Fretes está rodando');
 });
 
 // =======================================================
@@ -559,6 +559,6 @@ app.delete('/avaliacoes/:id', async (req, res) => {
 // --- LIGAR O SERVIDOR ---
 const PORTA = 3000;
 app.listen(PORTA, () => {
-    console.log(`API (Garçom) está de pé e ouvindo na porta ${PORTA}`);
+    console.log(`API está ligada na porta ${PORTA}`);
     console.log(`Acesse http://localhost:${PORTA} no seu navegador.`);
 });
